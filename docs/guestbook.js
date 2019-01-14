@@ -14,7 +14,8 @@ const guestbook = {
   // add a single guestbood entry
   add(name, email, comment) {
     console.log('Sending', name, email, comment)
-    return $.ajax({
+    alert('Not available.');
+    return {};/*$.ajax({
       type: 'PUT',
       url: `${apiUrl}/entries`,
       contentType: 'application/json; charset=utf-8',
@@ -24,7 +25,7 @@ const guestbook = {
         comment,
       }),
       dataType: 'json',
-    });
+    });*/
   }
 };
 
